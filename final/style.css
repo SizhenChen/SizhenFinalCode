@@ -2,16 +2,16 @@ body {
     background-color: #50C2E5;
 }
 
-.show {
-    opacity: 1;
-}
-
 .hierarchy {
     margin: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.2;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
 }
 
 .person {
