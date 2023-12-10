@@ -63,7 +63,9 @@ h5 {
     margin: 3%;
     margin-left: 1%;
 }
+/* the arrow button */
 
 .showList:active {
     background-color: #DC3535;
 }
+/* When it is clicked the childs in the next hierarchy show. */

@@ -51,6 +51,7 @@ showList.forEach(function (button) {
     // console.log(`hierarchy${m + 1}`)
     button.addEventListener('click', function () {
         child.classList.toggle('show');
+        //An issue here: when the arrow button is clicked the toggle of invisibility won't happen.
 
         if (button.innerHTML === '▼') {
             button.innerHTML = '▲';
