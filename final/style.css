@@ -1,5 +1,27 @@
 body {
     background-color: #50C2E5;
+    margin: 0;
+}
+
+#topBar{
+    display: flex;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #DC3535;
+    border: solid 0.2rem #DC3535;
+}
+
+.affiliation{
+    color: #DC3535;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0.1rem;
+    margin-left: 1rem;
+}
+
+.affiliation:hover{
+    text-decoration: underline;
 }
 
 .hierarchy {
