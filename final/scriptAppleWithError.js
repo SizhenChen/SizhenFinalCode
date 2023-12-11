@@ -49,9 +49,8 @@ for (i = 0; i <= h; i++) {
     var showList = document.querySelectorAll(`#hierarchy${i} .showList`);
     // console.log(`#hierarchy${i}`);
 
-    if (i != 0) {
-        var sameHdiffChild = document.querySelectorAll(`.sameHdiffChild`);
-        //It worked after I changed here
+    if (i === 1) {
+        var sameHdiffChild = document.querySelectorAll(`#hierarchy${i} .sameHdiffChild`);
         sameHdiffChild.forEach(function (div, index) {
             var sameHdiffChildId = 'sameHdiffChild' + (index);
             div.id = sameHdiffChildId;

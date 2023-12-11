@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-#topBar{
+#topBar {
     display: flex;
     background-color: #DC3535;
     margin: 0;
@@ -12,7 +12,7 @@ body {
     border: solid 0.3rem #DC3535;
 }
 
-.affiliation{
+.affiliation {
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
@@ -20,24 +20,26 @@ body {
     margin-left: 1rem;
 }
 
-.affiliation:hover{
+.affiliation:hover {
     text-decoration: underline;
 }
 
 .sameHdiffChild {
-    opacity: 0.2;
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .hierarchy {
     margin: 1rem;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    opacity: 0.2;
 }
 
 .show {
-    opacity: 1;
+    display: flex;
 }
 
 .person {
@@ -89,9 +91,11 @@ h5 {
     margin: 3%;
     margin-left: 1%;
 }
+
 /* the arrow button */
 
 .showList:active {
     background-color: #DC3535;
 }
+
 /* When it is clicked the childs in the next hierarchy show. */
