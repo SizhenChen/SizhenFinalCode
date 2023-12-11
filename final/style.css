@@ -5,15 +5,15 @@ body {
 
 #topBar{
     display: flex;
-    background-color: #ffffff;
+    background-color: #DC3535;
     margin: 0;
     padding: 0;
-    color: #DC3535;
-    border: solid 0.2rem #DC3535;
+    color: #ffffff;
+    border: solid 0.3rem #DC3535;
 }
 
 .affiliation{
-    color: #DC3535;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
     margin: 0.1rem;
@@ -24,12 +24,16 @@ body {
     text-decoration: underline;
 }
 
+.sameHdiffChild {
+    opacity: 0.2;
+}
+
 .hierarchy {
     margin: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
+    opacity: 0.2;
 }
 
 .show {
