@@ -49,25 +49,24 @@ hierarchies.forEach(function (div, index) {
 for (i = 0; i <= h; i++) {
     var showList = document.querySelectorAll(`#hierarchy${i} .showList`);
     // console.log(`#hierarchy${i}`);
-    var sameHdiffChild = document.querySelectorAll(`#hierarchy${i} .sameHdiffChild`);
 
-    sameHdiffChild.forEach(function (div, index) {
-        var sameHdiffChildId = 'sameHdiffChild' + (index);
-        div.id = sameHdiffChildId;
-        // console.log(`${sameHdiffChildId}`);
-    })
+    if (i === 1) {
+        var sameHdiffChild = document.querySelectorAll(`#hierarchy${i} .sameHdiffChild`);
+        sameHdiffChild.forEach(function (div, index) {
+            var sameHdiffChildId = 'sameHdiffChild' + (index);
+            div.id = sameHdiffChildId;
+            // console.log(`${sameHdiffChildId}`);
+        })
 
-    showList.forEach(function (button, index) {
-        let H = document.getElementById(`hierarchy${i + 1}`)
-        // console.log(`hierarchy${i + 1}`);
-
-        if (i > 0) {
+        showList.forEach(function (button, index) {
+            let H = document.getElementById(`hierarchy${i + 1}`)
+            console.log(`hierarchy${i + 1}`);
             let C = document.getElementById(`sameHdiffChild${index}`)
-            console.log(`sameHdiffChild${index}`)
+            console.log(`${index}`)
             button.addEventListener('click', function () {
                 H.classList.toggle('show');
                 C.classList.toggle('show');
-                //Why is here an error of cannot read properties of null when C isn't null?
+                //Why is here an error saying C is null?
 
                 if (button.innerHTML === '▼') {
                     button.innerHTML = '▲';
@@ -75,7 +74,11 @@ for (i = 0; i <= h; i++) {
                     button.innerHTML = '▼';
                 }
             })
-        } else {
+        })
+    } else {
+        showList.forEach(function (button) {
+            let H = document.getElementById(`hierarchy${i + 1}`)
+            // console.log(`hierarchy${i + 1}`);
             button.addEventListener('click', function () {
                 H.classList.toggle('show');
 
@@ -85,8 +88,8 @@ for (i = 0; i <= h; i++) {
                     button.innerHTML = '▼';
                 }
             })
-        }
-    })
+        })
+    }
 
 }
 
